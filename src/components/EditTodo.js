@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-export default function EditTodo({ todo, saveTodo, cancelEditTodo }) {
+export default function EditTodo({ todo, editTodo, cancelEditTodo }) {
   const [value, setValue] = useState(todo.content);
 
   function handleChange(e) {
@@ -10,14 +10,14 @@ export default function EditTodo({ todo, saveTodo, cancelEditTodo }) {
 
   function handleKeyDown(e) {
     if (e.key === 'Enter' && value.length) {
-      saveTodo(value);
+      editTodo(value);
       setValue('');
     }
   }
 
   function handleClick() {
     if (value.length) {
-      saveTodo(value);
+      editTodo(value);
       setValue('');
     }
   }
