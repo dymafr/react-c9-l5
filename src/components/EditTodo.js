@@ -32,8 +32,8 @@ export default function EditTodo({ todo, editTodo, cancelEditTodo }) {
         className="mr-15 flex-fill"
         placeholder="Ajouter une tâche"
       />
-      <button onClick={handleClick} className="btn btn-primary">
-        Editer
+      <button onClick={handleClick} className="btn btn-primary mr-15">
+        Sauvegarder
       </button>
       <button onClick={cancelEditTodo} className="btn btn-reverse-primary">
         Annuler
