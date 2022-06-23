@@ -23,7 +23,7 @@ export default function EditTodo({ todo, editTodo, cancelEditTodo }) {
   }
 
   return (
-    <div className="d-flex justify-content-center align-items-center mb-20">
+    <div className="d-flex justify-content-center align-items-center mb-10">
       <input
         type="text"
         onChange={handleChange}
