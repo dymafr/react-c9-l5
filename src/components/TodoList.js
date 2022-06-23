@@ -17,6 +17,7 @@ export default function TodoList({
             key={todo.id}
             todo={todo}
             editTodo={(content) => editTodo(todo.id, content)}
+            cancelEditTodo={() => toggleTodoEdit(todo.id)}
           />
         ) : (
           <TodoItem
